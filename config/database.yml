@@ -5,6 +5,10 @@
 #   gem 'sqlite3'
 #
 default: &default
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b96fa26bcabff0207031c5fbd1e65538220223b1
   adapter: mysql2
   pool: 5
   timeout: 5000
@@ -14,14 +18,41 @@ default: &default
 development:
   <<: *default
   database: learning-ruby-dev
+<<<<<<< HEAD
+=======
+=======
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: db/development.sqlite3
+>>>>>>> 9081f2e25557621276dfae85d109995c38fb2afd
+>>>>>>> b96fa26bcabff0207031c5fbd1e65538220223b1
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> b96fa26bcabff0207031c5fbd1e65538220223b1
   database: learning-ruby-test
 
 production:
   <<: *default
   database: learning-ruby
+<<<<<<< HEAD
+=======
+  
+=======
+  database: db/test.sqlite3
+
+production:
+  <<: *default
+  database: db/production.sqlite3
+>>>>>>> 9081f2e25557621276dfae85d109995c38fb2afd
+>>>>>>> b96fa26bcabff0207031c5fbd1e65538220223b1

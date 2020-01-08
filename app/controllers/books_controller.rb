@@ -1,6 +1,7 @@
 class BooksController < ApplicationController
   def index
     @books = Book.all
+<<<<<<< HEAD
     Rails.logger.info "All books #{@books.inspect}"
   end
 
@@ -48,5 +49,7 @@ class BooksController < ApplicationController
   def destroy
     Book.find(params['id']).destroy
     redirect_to books_path
+=======
+>>>>>>> b96fa26bcabff0207031c5fbd1e65538220223b1
   end
 end
